@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: rgb(104, 150, 122);
+  background: rgb(228, 86, 86);
 }
 
 .car {
@@ -27,7 +27,7 @@ body {
 }
 
 .top {
-  background: rgb(104, 150, 122);
+  background: rgb(228, 86, 86);
   height: 60px;
   width: 455px;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .wheel {
-  background: rgb(48, 67, 78);
+  background: rgb(74, 99, 114);
   border-radius: 50%;
   height: 72px;
   position: absolute;
@@ -59,15 +59,57 @@ body {
   width: 48px;
 }
 
-.bottom__front,
-.top__front {
+.top__front,
+.bottom__front {
   height: 100%;
   position: relative;
   width: 120px;
 }
 
+.top__front__border {
+  border-bottom: 60px solid white;
+  border-left: 22px solid transparent;
+  height: 60px;
+}
+
+.top__front__windshield {
+  background: rgb(74, 99, 114);
+  height: 30px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  width: 1px;
+}
+
+.top__front__window-triangle {
+  border-bottom: 50px solid rgb(87, 216, 255);
+  border-left: 18px solid transparent;
+  left: 6px;
+  position: absolute;
+  top: 5px;
+}
+
+.top__front__window-rectangle {
+  height: 50px;
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 87px;
+}
+
+.window {
+  background: rgb(87, 216, 255);
+}
+
 .bottom__front {
   position: relative;
+}
+
+.bottom__front > * {
+  position: absolute;
 }
 
 @keyframes blinking {
@@ -79,6 +121,29 @@ body {
   }
 }
 
+.bottom__front__mirror {
+  background: rgb(74, 99, 114);
+  border-radius: 20%;
+  height: 20px;
+  left: 40px;
+  top: -35px;
+  width: 10px;
+}
+
+.bottom__front__mirror_handle {
+  background: rgb(74, 99, 114);
+  height: 30px;
+  margin-left: 4px;
+  width: 2px;
+}
+
+.bottom__front__door-knob {
+  background: white;
+  height: 2px;
+  right: 0px;
+  top: 30px;
+  width: 12px;
+}
 
 .bottom__front__blinker {
   animation: blinking 2s infinite steps(2);
@@ -86,7 +151,6 @@ body {
   border-radius: 50%;
   height: 10px;
   left: 5px;
-  position: absolute;
   top: 30px;
   width: 5px;
 }
@@ -99,7 +163,6 @@ body {
   border-radius: 50%;
   height: 25px;
   left: -5px;
-  position: absolute;
   top: 40px;
   width: 10px;
 }
@@ -111,44 +174,8 @@ body {
   bottom: -6px;
   height: 20px;
   left: -10px;
-  position: absolute;
   width: 20px;
   z-index: 2;
-}
-
-.top__front__border {
-  border-bottom: 60px solid white;
-  border-left: 22px solid transparent;
-  height: 60px;
-}
-
-.top__front__windshield {
-  background: rgb(48, 67, 78);
-  height: 30px;
-  left: 6px;
-  position: absolute;
-  top: 23px;
-  -ms-transform: rotate(20deg);
-  -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-  width: 1px;
-}
-
-.top__front__window--triangle {
-  border-bottom: 50px solid rgb(0, 195, 255);
-  border-left: 18px solid transparent;
-  left: 6px;
-  position: absolute;
-  top: 6px;
-}
-
-.top__front__window--rectangle {
-  background: rgb(0, 195, 255);
-  height: calc(100% - 9px);
-  left: 28px;
-  position: absolute;
-  top: 5px;
-  width: 87px;
 }
 
 .bottom__middle,
@@ -156,7 +183,23 @@ body {
   width: 145px;
 }
 
+.top__middle,
+.top__back {
+  border: 5px solid white;
+  height: 60px;
+}
+
 .bottom__back,
 .top__back {
   width: 190px;
+}
+
+.top__back {
+  background: white;
+}
+
+.top__back__window {
+  border-radius: 0px 15px 0px 0px / 0px 50px 0px 0px;
+  height: 50px;
+  width: 145px;
 }
