@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: rgb(104, 150, 122);
+}
+
+.car {
+  align-items: flex-end;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  margin: 50px auto;
+  width: 470px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.top {
+  background: rgb(104, 150, 122);
+  height: 60px;
+  width: 455px;
+}
+
+.bottom {
+  border-radius: 15px/100% 0 0 0;
+  border-top: 7px solid white;
+  background: rgb(160, 91, 206);
+  height: 120px;
+  width: 470px;
+}
+
+.wheel {
+  background: rgb(48, 67, 78);
+  border-radius: 50%;
+  height: 72px;
+  position: absolute;
+  width: 72px;
+}
+
+.wheel__inner {
+  background: rgb(182, 180, 180);
+  border: 9px solid white;
+  border-radius: 50%;
+  height: 48px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 48px;
+}
+
+.bottom__front,
+.top__front {
+  height: 100%;
+  position: relative;
+  width: 120px;
+}
+
+.bottom__front {
+  position: relative;
+}
+
+@keyframes blinking {
+  0% {
+    background: rgb(253, 217, 57);
+    -webkit-box-shadow: 0px 0px 17px yellow;
+    -moz-box-shadow: 0px 0px 17px yellow;
+    box-shadow: 0px 0px 17px yellow;
+  }
+}
+
+
+.bottom__front__blinker {
+  animation: blinking 2s infinite steps(2);
+  background: rgb(231, 101, 14);
+  border-radius: 50%;
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: 30px;
+  width: 5px;
+}
+
+.bottom__front__headlamp {
+  -webkit-box-shadow: 0px 0px 17px yellow;
+  -moz-box-shadow: 0px 0px 17px yellow;
+  box-shadow: 0px 0px 17px yellow;
+  background: white;
+  border-radius: 50%;
+  height: 25px;
+  left: -5px;
+  position: absolute;
+  top: 40px;
+  width: 10px;
+}
+
+.bottom__front__bumper {
+  background: white;
+  border: 1px solid rgb(188, 189, 189);
+  border-radius: 35%;
+  bottom: -6px;
+  height: 20px;
+  left: -10px;
+  position: absolute;
+  width: 20px;
+  z-index: 2;
+}
+
+.top__front__border {
+  border-bottom: 60px solid white;
+  border-left: 22px solid transparent;
+  height: 60px;
+}
+
+.top__front__windshield {
+  background: rgb(48, 67, 78);
+  height: 30px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  width: 1px;
+}
+
+.top__front__window--triangle {
+  border-bottom: 50px solid rgb(0, 195, 255);
+  border-left: 18px solid transparent;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+}
+
+.top__front__window--rectangle {
+  background: rgb(0, 195, 255);
+  height: calc(100% - 9px);
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 87px;
+}
+
+.bottom__middle,
+.top__middle {
+  width: 145px;
+}
+
+.bottom__back,
+.top__back {
+  width: 190px;
+}
