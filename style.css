@@ -11,7 +11,6 @@ body {
 
 .car {
   align-items: flex-end;
-  border-bottom: 1px solid white;
   display: flex;
   flex-direction: column;
   height: 180px;
@@ -43,23 +42,15 @@ body {
 .wheel {
   background: rgb(74, 99, 114);
   border-radius: 50%;
-  bottom: -42px;
   height: 72px;
-  left: 48px;
   position: absolute;
   width: 72px;
   z-index: 3;
 }
 
-.bottom__front__wheel-space {
-  background: rgb(228, 86, 86);
-  border-radius: 30px 30px 0 0 / 50px 50px 0 0;
-  bottom: -1px;
-  height: 40px;
-  left: 40px;
-  width: 88px;
-  position: absolute;
-  z-index: 2;
+.bottom__front__wheel {
+  left: 9px;
+  top: 10px;
 }
 
 .wheel__inner {
@@ -71,6 +62,17 @@ body {
   position: absolute;
   top: 12px;
   width: 48px;
+}
+
+.bottom__front__wheel-space {
+  background: rgb(228, 86, 86);
+  border-radius: 30px 30px 0 0 / 50px 50px 0 0;
+  bottom: -1px;
+  height: 40px;
+  left: 40px;
+  width: 88px;
+  position: absolute;
+  z-index: 2;
 }
 
 .top__front,
@@ -120,6 +122,7 @@ body {
 
 .bottom__front {
   position: relative;
+  width: 138px;
 }
 
 .bottom__front > * {
@@ -154,7 +157,7 @@ body {
 .bottom__front__door-knob {
   background: white;
   height: 2px;
-  right: 0px;
+  right: 5px;
   top: 30px;
   width: 12px;
 }
@@ -182,19 +185,26 @@ body {
 }
 
 .bottom__front__bumper {
-  background: white;
-  border: 1px solid rgb(188, 189, 189);
-  border-radius: 35%;
-  bottom: -6px;
-  height: 20px;
   left: -10px;
   width: 20px;
+}
+
+.bumper {
+  background: white;
+  border: 1px solid rgb(188, 189, 189);
+  border-radius: 7px;
+  bottom: -7px;
+  height: 20px;
   z-index: 2;
 }
 
-.bottom__middle,
-.top__middle {
+.top__middle,
+.bottom__middle {
   width: 140px;
+}
+
+.bottom__middle {
+  border-right: 1px solid white;
 }
 
 .top__middle,
@@ -203,14 +213,22 @@ body {
   height: 60px;
 }
 
-.bottom__back,
-.top__back {
+.top__back,
+.bottom__back {
   width: 200px;
 }
 
 .top__back {
   background: white;
   border-radius: 0 30px 0 0 / 0 100% 0 0
+}
+
+.bottom__back {
+  position: relative;
+}
+
+.bottom__back > * {
+  position: absolute;
 }
 
 .top__back__window {
@@ -292,4 +310,34 @@ body {
 
 .top__back__air-vents__single:nth-child(16) {
   margin-left: 15px;
+}
+
+.bottom__back__fuel-tank {
+  background: white;
+  border-radius: 50%;
+  height: 10px;
+  right: 25px;
+  top: 53px;
+  width: 10px;
+}
+
+.bottom__back__wheel {
+  left: 14px;
+  top: -10px;
+}
+
+.bottom__back__wheel-space {
+  background: rgb(228, 86, 86);
+  border-radius: 15px 15px 0 0 / 50px 50px 0 0;
+  bottom: -46px;
+  height: 65px;
+  left: 65px;
+  width: 100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.bottom__back__bumper {
+  right: -12px;
+  width: 35px;
 }
