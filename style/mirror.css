@@ -1,0 +1,15 @@
+.bottom__front__mirror {
+  background: rgb(74, 99, 114);
+  border-radius: 20%;
+  height: 20px;
+  left: 40px;
+  top: -35px;
+  width: 10px;
+}
+
+.bottom__front__mirror_handle {
+  background: rgb(74, 99, 114);
+  height: 30px;
+  margin-left: 4px;
+  width: 2px;
+}

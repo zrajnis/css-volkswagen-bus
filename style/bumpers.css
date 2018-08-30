@@ -1,0 +1,18 @@
+.bumper {
+  background: white;
+  border: 1px solid rgb(188, 189, 189);
+  border-radius: 7px;
+  bottom: -7px;
+  height: 20px;
+  z-index: 2;
+}
+
+.bottom__front__bumper {
+  left: -10px;
+  width: 20px;
+}
+
+.bottom__back__bumper {
+  right: -12px;
+  width: 35px;
+}

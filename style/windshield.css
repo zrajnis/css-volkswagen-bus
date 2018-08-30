@@ -1,0 +1,11 @@
+.top__front__windshield {
+  background: rgb(74, 99, 114);
+  height: 30px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  width: 1px;
+}

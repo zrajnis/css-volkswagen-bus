@@ -1,0 +1,25 @@
+.window {
+  background: rgb(87, 216, 255);
+}
+
+.top__front__window-triangle {
+  border-bottom: 50px solid rgb(87, 216, 255);
+  border-left: 18px solid transparent;
+  left: 6px;
+  position: absolute;
+  top: 5px;
+}
+
+.top__front__window-rectangle {
+  height: 50px;
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 87px;
+}
+
+.top__back__window {
+  border-radius: 0 15px 0 0 / 0 50px 0 0;
+  height: 50px;
+  width: 140px;
+}
