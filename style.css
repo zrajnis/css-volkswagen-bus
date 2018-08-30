@@ -50,7 +50,7 @@ body {
 
 .bottom__front__wheel {
   left: 9px;
-  top: 10px;
+  top: 9px;
 }
 
 .wheel__inner {
@@ -70,8 +70,8 @@ body {
   bottom: -1px;
   height: 40px;
   left: 40px;
-  width: 88px;
   position: absolute;
+  width: 88px;
   z-index: 2;
 }
 
@@ -154,12 +154,59 @@ body {
   width: 2px;
 }
 
-.bottom__front__door-knob {
+.bottom__front__door {
+  border-bottom: 0;
+  border-radius: 30px / 100% 0 0 0;
+  border-right: 0;
+  height: 100%;
+  left: 4px;
+  width: calc(100% - 5px);
+}
+
+.bottom__front__door > * {
   background: white;
+  position: absolute;
+}
+
+.bottom__front__door__bottom-left {
+  bottom: 5px;
+  height: 1px;
+  width: 30px;
+}
+
+
+.bottom__front__door__bottom-middle {
+  bottom: 24px;
+  height: 1px;
+  left: 16px;
+  -ms-transform: rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+  width: 42px;
+}
+
+
+.bottom__front__door__bottom-right {
+  bottom: 44px;
+  height: 1px;
+  left: 44px;
+  width: 86px;
+}
+
+.bottom__front__door__knob {
   height: 2px;
   right: 5px;
   top: 30px;
   width: 12px;
+}
+
+.bottom__front__door__right-side {
+  background: white;
+  height: 69px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
 }
 
 .bottom__front__blinker {
