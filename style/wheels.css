@@ -1,10 +1,18 @@
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
 .wheel {
+  animation: spin 1s linear infinite;
   background: rgb(74, 99, 114);
   border-radius: 50%;
   height: 72px;
   position: absolute;
   width: 72px;
+  border: 1px dashed black;
   z-index: 3;
+  box-sizing: content-box;
 }
 
 .bottom__front__wheel {
@@ -21,6 +29,34 @@
   position: absolute;
   top: 12px;
   width: 48px;
+}
+
+.wheel__inner__bolt {
+  border: 1px solid rgb(74, 99, 114);
+  border-radius: 50%;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+}
+
+.wheel__inner__bolt:nth-child(1) {
+  top: 6px;
+  left: 6px;
+}
+
+.wheel__inner__bolt:nth-child(2) {
+  top: 6px;
+  right: 6px;
+}
+
+.wheel__inner__bolt:nth-child(3) {
+  bottom: 6px;
+  left: 6px;
+}
+
+.wheel__inner__bolt:nth-child(4) {
+  bottom: 6px;
+  right: 6px;
 }
 
 .bottom__front__wheel-space {
