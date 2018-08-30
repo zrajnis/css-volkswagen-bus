@@ -1,0 +1,51 @@
+.wheel {
+  background: rgb(74, 99, 114);
+  border-radius: 50%;
+  height: 72px;
+  position: absolute;
+  width: 72px;
+  z-index: 3;
+}
+
+.bottom__front__wheel {
+  left: 9px;
+  top: 9px;
+}
+
+.wheel__inner {
+  background: rgb(182, 180, 180);
+  border: 9px solid white;
+  border-radius: 50%;
+  height: 48px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 48px;
+}
+
+.bottom__front__wheel-space {
+  background: rgb(228, 86, 86);
+  border-radius: 30px 30px 0 0 / 50px 50px 0 0;
+  bottom: -1px;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  width: 88px;
+  z-index: 2;
+}
+
+.bottom__back__wheel {
+  left: 14px;
+  top: -10px;
+}
+
+.bottom__back__wheel-space {
+  background: rgb(228, 86, 86);
+  border-radius: 15px 15px 0 0 / 50px 50px 0 0;
+  bottom: -46px;
+  height: 65px;
+  left: 65px;
+  width: 100px;
+  overflow: hidden;
+  z-index: 2;
+}

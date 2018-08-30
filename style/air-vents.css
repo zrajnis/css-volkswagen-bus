@@ -1,0 +1,74 @@
+.top__back__air-vents {
+  height: 50px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  width: 50px;
+}
+
+.top__back__air-vents__single {
+  background: rgb(74, 99, 114);
+  height: 1px;
+  margin-bottom: 2px;
+  width: 25px;
+}
+
+.top__back__air-vents__single:nth-child(2) {
+  margin-left: 1px;
+}
+
+.top__back__air-vents__single:nth-child(3) {
+  margin-left: 2px;
+}
+
+.top__back__air-vents__single:nth-child(4) {
+  margin-left: 3px;
+}
+
+.top__back__air-vents__single:nth-child(5) {
+  margin-left: 4px;
+}
+
+.top__back__air-vents__single:nth-child(6) {
+  margin-left: 5px;
+}
+
+.top__back__air-vents__single:nth-child(7) {
+  margin-left: 6px;
+}
+
+.top__back__air-vents__single:nth-child(8) {
+  margin-left: 7px;
+}
+
+.top__back__air-vents__single:nth-child(9) {
+  margin-left: 8px;
+}
+
+.top__back__air-vents__single:nth-child(10) {
+  margin-left: 9px;
+}
+
+.top__back__air-vents__single:nth-child(11) {
+  margin-left: 10px;
+}
+
+.top__back__air-vents__single:nth-child(12) {
+  margin-left: 11px;
+}
+
+.top__back__air-vents__single:nth-child(13) {
+  margin-left: 12px;
+}
+
+.top__back__air-vents__single:nth-child(14) {
+  margin-left: 13px;
+}
+
+.top__back__air-vents__single:nth-child(15) {
+  margin-left: 14px;
+}
+
+.top__back__air-vents__single:nth-child(16) {
+  margin-left: 15px;
+}
