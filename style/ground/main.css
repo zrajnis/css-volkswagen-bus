@@ -1,0 +1,9 @@
+@import 'grass.css';
+
+.ground {
+  background: rgb(255, 172, 117);
+  border-top: 5px solid gray;
+  height: calc(100vh - 274px);
+  overflow: hidden;
+  position: relative;
+}

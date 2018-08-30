@@ -1,14 +1,5 @@
-@import 'air-vents.css';
-@import "blinker.css";
-@import 'bumpers.css';
-@import 'bus-body.css';
-@import 'door.css';
-@import 'fuel-tank.css';
-@import 'headlamp.css';
-@import 'mirror.css';
-@import 'wheels.css';
-@import 'windows.css';
-@import 'windshield.css';
+@import 'bus/main.css';
+@import 'ground/main.css';
 
 * {
   -webkit-box-sizing: border-box;
@@ -18,5 +9,10 @@
 
 html,
 body {
-  background: rgb(228, 86, 86);
+  background: rgb(146, 208, 210);
+  margin: 0;
+}
+
+.body {
+  height: calc(100vh - 50px);
 }
